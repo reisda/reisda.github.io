@@ -1030,7 +1030,15 @@ transition: .4s;
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 350px){
+@media screen and (max-width: 567px){
+
+  .home__img-pill2{
+    display: none;
+  }
+  .home__img-pill{
+    width: 200px;
+  }
+
   .container{
     margin-left: var(--mb-1);
     margin-left: var(--mb-1);
@@ -1096,6 +1104,11 @@ transition: .4s;
 
 /* For medium devices */
 @media screen and (min-width: 568px){
+
+  .home__img-pill{
+    display: none;
+  }
+
   .home__content{
     grid-template-columns: max-content 1fr 1fr;
   }
