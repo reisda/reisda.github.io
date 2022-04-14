@@ -161,7 +161,7 @@ window.addEventListener('scroll', scrollUp)
 /*==================== DARK LIGHT THEME ====================*/ 
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
-const iconTheme = 'uil uil-sun'
+const iconTheme = 'uil-sun'
 
 // Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme')
@@ -187,3 +187,20 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/*==================== SROLL REVEAL ANIMATION ====================*/ 
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+})
+
+sr.reveal(`.home__img`, {origin: 'left'})
+sr.reveal(`.home__social`, {origin: 'left'})
+sr.reveal(`.home__title`, {delay:500, origin: 'left'})
+sr.reveal(`.home__subtitle`, {delay:600, origin: 'left'})
+sr.reveal(`.home__description`, {delay:600, origin: 'left'})
+sr.reveal(`.profile__buttons`, {origin: 'bottom'})
+sr.reveal(`.section__title`, {origin: 'bottom'})
+sr.reveal(`.section__subtitle`, {delay:500, origin: 'bottom'})
