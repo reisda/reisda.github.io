@@ -232,3 +232,9 @@ sr.reveal(`.project__data`,{delay:1600, origin:'left'})
 
 sr.reveal(`.testimonial`,{delay:800})
 sr.reveal(`.contact`,{delay:800})
+
+var loader = document.querySelector(".loader")
+window.addEventListener("load", vanish);
+function vanish() {
+    loader.classList.add("disppear");
+}
