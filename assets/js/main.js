@@ -188,6 +188,14 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+/*=============== CHANGE BACKGROUND HEADER ===============*/
+function scrollHeader(){
+    const header = document.getElementById('header')
+    // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
+    if(this.scrollY >= 150) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+}
+window.addEventListener('scroll', scrollHeader)
+
 /*==================== SROLL REVEAL ANIMATION ====================*/ 
 const sr = ScrollReveal({
     origin: 'top',
@@ -196,11 +204,31 @@ const sr = ScrollReveal({
     delay: 400,
 })
 
-sr.reveal(`.home__img`, {origin: 'left'})
-sr.reveal(`.home__social`, {origin: 'left'})
-sr.reveal(`.home__title`, {delay:500, origin: 'left'})
-sr.reveal(`.home__subtitle`, {delay:600, origin: 'left'})
-sr.reveal(`.home__description`, {delay:600, origin: 'left'})
-sr.reveal(`.profile__buttons`, {origin: 'bottom'})
-sr.reveal(`.section__title`, {origin: 'bottom'})
-sr.reveal(`.section__subtitle`, {delay:500, origin: 'bottom'})
+sr.reveal(`.home__title`)
+sr.reveal(`.home__subtitle`, {delay:400})
+sr.reveal(`.home__description`, {delay:500})
+sr.reveal(`.profile__buttons`, {delay: 900, origin: 'bottom'})
+
+sr.reveal(`.home__img`, {delay: 800, origin: 'bottom'})
+sr.reveal(`.home__social`, {origin: 'top'})
+sr.reveal(`.home__scroll`, {delay: 1000, origin: 'top'})
+
+sr.reveal(`.section__title`)
+sr.reveal(`.section__subtitle`)
+
+sr.reveal(`.about__img`,{origin: 'left'})
+sr.reveal(`.about__description`,{origin: 'right'})
+sr.reveal(`.about__info`,{origin: 'right'})
+sr.reveal(`.about__buttons`,{origin: 'right'})
+
+sr.reveal(`.skills`,{interval:100})
+sr.reveal(`.qualification`,{interval:100})
+sr.reveal(`.services`,{interval:100})
+sr.reveal(`.portfolio`,{interval:100})
+
+sr.reveal(`.project__bg`,{delay:1200})
+sr.reveal(`.project__img`,{delay:1600, origin:'right'})
+sr.reveal(`.project__data`,{delay:1600, origin:'left'})
+
+sr.reveal(`.testimonial`,{delay:800})
+sr.reveal(`.contact`,{delay:800})

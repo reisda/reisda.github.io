@@ -13,7 +13,7 @@
     --hue: 207;
     --sat: 90%;
     --lig: 61%;
-    --first-color: hsl(var(--hue-color), 69%, 61%);
+    --first-color: hsl(var(--hue-color), 13%, 33%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
@@ -22,7 +22,7 @@
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --text-color-lighten: hsl(var(--hue-color), 8%, 92%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
-    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --body-color: hsl(260, 60%, 99%);
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
@@ -178,8 +178,9 @@ img {
   position: fixed;
   bottom: 0;
   left: 0;
+  background-color: transparent;
   z-index: var(--z-fixed);
-  background-color: hsl(0deg 0% 100% / 92%);
+  transition: .5s;
 }
 
 /*==================== NAV ====================*/
@@ -268,6 +269,7 @@ img {
 
 /* Change background header */
 .scroll-header{
+  background-color: var(--body-color);
   box-shadow: 0 -1px 4px rgba(0,0,0,.15);
 }
 
@@ -888,6 +890,41 @@ img {
   row-gap: 3rem;
 }
 
+#status{
+  color: var(--first-color-second);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+#status.success{
+  background-color:var(--first-color-lighter);
+  animation: status 4s ease forwards;
+}
+
+#status.error{
+  background-color:var(--first-color);
+  animation: status 4s ease forwards;
+}
+
+@keyframes status{
+  0%{
+    opacity: 1;
+    pointer-events: all;
+  }
+  90%{
+    opacity: 1;
+    pointer-events: all;
+  }
+  100%{
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
 .contact__information{
   display: flex;
   margin-bottom: var(--mb-2);
@@ -939,11 +976,12 @@ margin-right: var(--mb-0-75);
   row-gap: 3.5rem;
 }
 
-
+/*
 .footer__bg{
   background-color: var(--first-color-second);
   padding: 2rem 0 3rem;
 }
+*/
 
 .footer__title{
   font-size: var(--h1-font-size);
@@ -984,7 +1022,7 @@ margin-right: var(--mb-0-75);
 .footer__subtitle,
 .footer__links,
 .footer__social{
-  color: #fff;
+  color: rgb(42, 33, 66);
 }
 /*========== SCROLL UP ==========*/
 .scrollup{

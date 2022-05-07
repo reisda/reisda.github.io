@@ -340,7 +340,7 @@
             </section>
 
             <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
+            <section class="qualification section" id="qualification">
                 <h2 class="section__title">Qualification</h2>
                 <span class="section__subtitle">My personal journery</span>
 
@@ -648,12 +648,14 @@
                     <div class="swiper-wrapper">
                         <!--==================== PORTFOLIO 1 ====================-->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+                            <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
-                                <h3 class="portfolio__title">Branding Product Menara</h3>
-                                <p class="portfolio__description">Pembuatan branding logo menara dan kemasan product menara 
-                                merupakan project tahun 2019 oleh saya untuk PT.Agrinesia Raya</p>
+                                <h3 class="portfolio__title">Social Media Design</h3>
+                                <p class="portfolio__description">Membuat design promo sesuai dengan branding masing-masing
+                                    brand, collor tone dan tema design yang strong merupakan kunci agar mudah di ingat dan
+                                    eye catching.
+                                </p>
                                 <a href="#" class="button button--flex button--small portfolio__button">
                                     View Project
                                     <i class="uil uil-arrow-right button__icon"></i>
@@ -666,9 +668,10 @@
                             <img src="assets/img/portfolio4.jpg" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
-                                <h3 class="portfolio__title">Branding Product Menara</h3>
-                                <p class="portfolio__description">Pembuatan branding logo menara dan kemasan product menara 
-                                merupakan project tahun 2019 oleh saya untuk PT.Agrinesia Raya</p>
+                                <h3 class="portfolio__title">Project Creation Pills</h3>
+                                <p class="portfolio__description">Project yang saya buat pada awal tahun 2019, menjadi jalan
+                                    agar selalu mengikuti perkembangan mode dan zaman di era 4.0
+                                </p>
                                 <a href="#" class="button button--flex button--small portfolio__button">
                                     View Project
                                     <i class="uil uil-arrow-right button__icon"></i>
@@ -678,12 +681,12 @@
 
                         <!--==================== PORTFOLIO 3 ====================-->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+                            <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Branding Product Menara</h3>
                                 <p class="portfolio__description">Pembuatan branding logo menara dan kemasan product menara 
-                                merupakan project tahun 2019 oleh saya untuk PT.Agrinesia Raya</p>
+                                merupakan project tahun 2019 untuk PT.Agrinesia Raya</p>
                                 <a href="#" class="button button--flex button--small portfolio__button">
                                     View Project
                                     <i class="uil uil-arrow-right button__icon"></i>
@@ -693,10 +696,10 @@
 
                         <!--==================== PORTFOLIO 4 ====================-->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+                            <img src="assets/img/portfolio5.jpg" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
-                                <h3 class="portfolio__title">Branding Product Menara</h3>
+                                <h3 class="portfolio__title">Branding Product Bakpia Kukus Tugu Jogja</h3>
                                 <p class="portfolio__description">Pembuatan branding logo menara dan kemasan product menara 
                                 merupakan project tahun 2019 oleh saya untuk PT.Agrinesia Raya</p>
                                 <a href="#" class="button button--flex button--small portfolio__button">
@@ -708,10 +711,10 @@
 
                         <!--==================== PORTFOLIO 5 ====================-->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+                            <img src="assets/img/portfolio6.jpg" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
-                                <h3 class="portfolio__title">Branding Product Menara</h3>
+                                <h3 class="portfolio__title">Branding SINA Konsultan Bisnis</h3>
                                 <p class="portfolio__description">Pembuatan branding logo menara dan kemasan product menara 
                                 merupakan project tahun 2019 oleh saya untuk PT.Agrinesia Raya</p>
                                 <a href="#" class="button button--flex button--small portfolio__button">
@@ -754,7 +757,7 @@
             </section>
 
             <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
+            <section class="testimonial section" id="testimonial">
                 <h2 class="section__title">Testimonial</h2>
                 <span class="section__subtitle">My client saying</span>
 
@@ -881,31 +884,58 @@
                     <form action="" class="contact__from grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
-                                <label for="" class="contact__label">Nama</label>
-                                <input type="text" class="contact__input">
+                                <label class="contact__label">Nama</label>
+                                <input type="text" id="nama" class="contact__input">
                             </div>
                             <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input">
+                                <label class="contact__label">Email</label>
+                                <input type="email" id="email" class="contact__input">
                             </div>
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Project</label>
-                            <input type="text" class="contact__input">
+                            <label class="contact__label">Project</label>
+                            <input type="text" id="judul" class="contact__input">
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Pesan</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                            <label class="contact__label">Pesan</label>
+                            <textarea id="pesan" name="" id="" cols="0" rows="7" class="contact__input"></textarea>
                         </div>
 
                         <div>
-                            <a href="#" class="button button--flex">
+                            <a id="btn" href="" class="button button--flex">
                                 Kirim Pesan
                                 <i class="uil uil-message button__icon"></i>
                             </a>
                         </div>
+                        <div id="status"></div>
                     </form>
                 </div>
+                <script src="https://smtpjs.com/v3/smtp.js">
+                </script>
+                <script>
+                    var btn = document.getElementById('btn');
+                    btn.addEventListener('click', function(e) {
+                        e.preventDefault()
+                        var nama = document.getElementById('nama').value;
+                        var email = document.getElementById('email').value;
+                        var judul = document.getElementById('judul').value;
+                        var pesan = document.getElementById('pesan').value;
+                        var body = 'nama: ' +nama + '<br/> email: ' +email + '<br/> judul' +
+                        judul + '<br/> pesan' +pesan;
+
+                        Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "refiemafida@gmail.com",
+                    Password : "irlgpkpmgflugnrl",
+                    To : 'refiemafida@gmail.com',
+                    From : email,
+                    Subject : judul,
+                    Body : pesan
+                }).then(
+                  message => alert(message)
+                );
+                    })
+            </script>
             </section>
         </main>
 
